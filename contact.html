@@ -3,50 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact | Zee</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Contact Me</h1>
+    <header class="site-header">
+        <a href="index.html" class="logo">zee<span>.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
     <main>
-        <section>
-            <h2>Get in Touch</h2>
-
-            <form>
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h1>Say <span>hello.</span></h1>
+                <p class="hero-description">
+                    Have a question or just want to connect?
+                    I'd be happy to hear from you.
                 </p>
+                <!-- Replace the placeholder email with your preferred contact address. -->
+                <a href="mailto:your.email@example.com" class="button button-primary">Send me an email ↗</a>
+            </div>
 
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <img src="assets/profile.jpg" alt="Zee's portrait" class="profile-image">
+                </div>
+                <span class="decor decor-one" aria-hidden="true">✳</span>
+                <span class="decor decor-two" aria-hidden="true">♡</span>
+            </div>
+        </section>
 
-                <p>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </p>
-
-                <button type="submit">Send</button>
-            </form>
+        <section class="intro-section">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>I'd love to <span>connect.</span></h2>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">✉</span>
+                    <h3>Email</h3>
+                    <p>Reach out for questions or conversations.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">♡</span>
+                    <h3>Collaboration</h3>
+                    <p>Always open to learning from new ideas.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">✧</span>
+                    <h3>Thank you</h3>
+                    <p>Thanks for taking the time to visit my portfolio!</p>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 My Portfolio</p>
+    <footer class="site-footer">
+        <a href="index.html" class="footer-logo">zee<span>.</span></a>
+        <p>Made with ♡ · © 2026</p>
     </footer>
-
 </body>
 </html>
