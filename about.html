@@ -3,37 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About | Zee</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>About Me</h1>
+    <header class="site-header">
+        <a href="index.html" class="logo">zee<span>.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active" aria-current="page">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
     <main>
-        <section>
-            <h2>What I do</h2>
-            <p>I am a Business Administration student interested in finance and technology.</p>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h1>A little<br>about <span>me.</span></h1>
+                <p class="hero-description">
+                    I'm Zee, a student learning, growing, and figuring things
+                    out one step at a time. I enjoy discovering new things
+                    and turning ideas into something of my own.
+                </p>
+                <a href="skills.html" class="button button-primary">What I'm learning ↗</a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <img src="assets/profile.jpg" alt="Zee's portrait" class="profile-image">
+                </div>
+                <span class="decor decor-one" aria-hidden="true">✳</span>
+                <span class="decor decor-two" aria-hidden="true">♡</span>
+            </div>
         </section>
 
-        <section>
-            <h2>Education</h2>
-            <p>I am currently studying Business Administration in FEU Diliman.</p>
+        <section class="intro-section">
+            <p class="eyebrow">MY JOURNEY</p>
+            <h2>Still learning, still <span>becoming.</span></h2>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">♡</span>
+                    <h3>What I value</h3>
+                    <p>Creativity, curiosity, and being open to learning.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">✿</span>
+                    <h3>What inspires me</h3>
+                    <p>New ideas, meaningful experiences, and personal growth.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">✧</span>
+                    <h3>What's next</h3>
+                    <p>Building confidence and creating projects I'm proud of.</p>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 My Portfolio</p>
+    <footer class="site-footer">
+        <a href="index.html" class="footer-logo">zee<span>.</span></a>
+        <p>Made with ♡ · © 2026</p>
     </footer>
-
 </body>
 </html>
