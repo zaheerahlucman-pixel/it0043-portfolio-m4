@@ -3,32 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Zee | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>My Portfolio</h1>
+    <header class="site-header">
+        <a href="index.html" class="logo">zee<span>.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
     <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>I'm Zee !! This is my portfolio C: </p>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">A LITTLE INTRODUCTION</p>
+                <h1>Hello,<br>I'm <span>Zee.</span></h1>
+                <p class="hero-description">Student, dreamer, and work in progress ♡</p>
+                <a href="about.html" class="button button-primary">A little about me ↗</a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <img src="assets/profile.jpg" alt="Zee's portrait" class="profile-image">
+                </div>
+                <span class="decor decor-one" aria-hidden="true">✳</span>
+                <span class="decor decor-two" aria-hidden="true">♡</span>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <p class="eyebrow">EXPLORE</p>
+            <h2>A few things about me<span>.</span></h2>
+
+            <div class="feature-grid">
+                <a href="about.html" class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">✿</span>
+                    <h3>About me</h3>
+                    <span class="card-link">Discover ↗</span>
+                </a>
+
+                <a href="skills.html" class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">✧</span>
+                    <h3>My skills</h3>
+                    <span class="card-link">Explore ↗</span>
+                </a>
+
+                <a href="contact.html" class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">♡</span>
+                    <h3>Contact</h3>
+                    <span class="card-link">Say hello ↗</span>
+                </a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 My Portfolio</p>
+    <footer class="site-footer">
+        <a href="index.html" class="footer-logo">zee<span>.</span></a>
+        <p>Made with ♡ · © 2026</p>
     </footer>
-
 </body>
 </html>

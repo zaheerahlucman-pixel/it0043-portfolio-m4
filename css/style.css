@@ -1,0 +1,110 @@
+/* ---------- Base styles ---------- */
+:root {
+    --cream: #fffaf6;
+    --pink: #f4dce3;
+    --pink-dark: #bd7189;
+    --rose: #92546b;
+    --text: #45383d;
+    --muted: #8b7b80;
+    --white: #ffffff;
+    --border: #f0e5e5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ---------- Navigation: Flexbox ---------- */
+.site-header {
+    width: min(1120px, 90%);
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo,
+.footer-logo {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.logo span,
+.footer-logo span,
+.hero h1 span,
+.intro-section h2 span {
+    color: var(--pink-dark);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: var(--muted);
+    font-size: 0.9rem;
+    transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--rose);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    width: min(1040px, 86%);
+    margin: 65px auto 110px;
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.eyebrow {
+    color: var(--pink-dark);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.5rem, 7vw, 6rem);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -3px;
+}
+
+.hero-description {
+    color: var(--muted);
