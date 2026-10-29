@@ -3,80 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Skills</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 70%;
-        }
-
-    th, td {
-        border: 1px solid black;
-        padding: 10px;
-        text-align: left;
-    }
-
-    caption {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-</style>
-
+    <title>Skills | Zee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-
-    <header>
-        <h1>My Skills</h1>
+    <header class="site-header">
+        <a href="index.html" class="logo">zee<span>.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="active" aria-current="page">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
     <main>
-        <section>
-            <h2>Skills</h2>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">WHAT I'M LEARNING</p>
+                <h1>Growing my<br><span>skills.</span></h1>
+                <p class="hero-description">
+                    Every project is a chance to learn something new.
+                    Here's a glimpse of the skills I'm developing as I
+                    explore technology and design.
+                </p>
+                <a href="contact.html" class="button button-primary">Get in touch ↗</a>
+            </div>
 
-            <table>
-                <caption>My Skills and Experience</caption>
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <img src="assets/profile.jpg" alt="Zee's portrait" class="profile-image">
+                </div>
+                <span class="decor decor-one" aria-hidden="true">✳</span>
+                <span class="decor decor-two" aria-hidden="true">♡</span>
+            </div>
+        </section>
 
-                <thead>
-                    <tr>
-                        <th scope="col">Skill</th>
-                        <th scope="col">Level</th>
-                        <th scope="col">Experience</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Canva</td>
-                        <td>Advanced</td>
-                        <td>2 years</td>
-                    </tr>
-
-                    <tr>
-                        <td>HTML</td>
-                        <td>Beginner</td>
-                        <td>1 year</td>
-                    </tr>
-
-                    <tr>
-                        <td>Java</td>
-                        <td>Beginner</td>
-                        <td>1 year</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="intro-section">
+            <p class="eyebrow">MY TOOLKIT</p>
+            <h2>Skills in <span>progress.</span></h2>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">⌘</span>
+                    <h3>HTML</h3>
+                    <p>Building the structure of web pages.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">✿</span>
+                    <h3>CSS</h3>
+                    <p>Exploring layouts, colors, and responsive design.</p>
+                </article>
+                <article class="feature-card">
+                    <span class="feature-icon" aria-hidden="true">✧</span>
+                    <h3>Problem-solving</h3>
+                    <p>Practicing how to troubleshoot and improve my work.</p>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 My Portfolio</p>
+    <footer class="site-footer">
+        <a href="index.html" class="footer-logo">zee<span>.</span></a>
+        <p>Made with ♡ · © 2026</p>
     </footer>
-
 </body>
 </html>
